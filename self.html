@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:black;
+        height: 50px;
+        text-align: center;
+        box-shadow: 0 15px 50px rgba(56, 56, 56, 0.919);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .left li{
+        padding: 20px;
+    }
+    .left li a{
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+    .left li:hover{
+        color: brown;
+        font-size: 1.05rem;
+        border: 1px solid white;
+       
+        
+    }
+    #hero{
+        background-image: url('https://wallpapercave.com/wp/LBW0Wg2.jpg');
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 25% right 0;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    #hero .heading h1{
+        color: white;
+        font-size: 40px;
+        font-family: sans-serif;
+        
+    }
+    #last{
+        margin-top: 20px;
+    }
+    .button{
+        
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        padding: 14px;
+        margin: 5px;
+        border: 2px solid white;
+        transition: 0.2s;
+    }
+    .button:hover{
+        color: gray;
+        font-size: 15px;
+    }
+    #collection{
+        position: relative;
+        display: flex;
+        margin-top: 80px;
+        
+    }
+    .watch{
+        border: 1px solid white;
+        padding: 40px;
+        margin-left: 100px;
+    }
+    .image1{
+        width: 100px;
+        height: 150px;
+    }
+    #collection .watch h4{
+        margin-top: 5px;
+    }
+    #collection .watch .price{
+        margin-top: 5px;
+        color: rgb(243,181,25);
+        padding-left: 20px;
+    }
+    .sale-tag{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        padding: 10px 5px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        border: 1px solid rgb(243,181,25);
+        background-color: rgb(243,181,25);
+        color: white;
+        width: 20px;
+        padding: 2px;
+    }
+    
+
+
+</style>
+<body>
+    <section class="navbar">
+        <div class="logo">sneha</div>
+        <ul class="left"><li><a href="#">chillzone</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">future</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">know</a></li>
+    </ul>
+
+    </section>
+
+    <section id="hero">
+        <div class="heading">
+            <h1>CUSTOM WATCHES FOR</h1>
+            <h1>ANY OCCASION</h1>
+        </div>
+        <div id="last">
+            <button class="button">DESIGN & ORDER</button>
+            <button class="button">REQUEST VIRTUAL SAMPLE</button>
+        </div>
+    </section>
+
+    <section id="collection">
+        <div class="watch">
+            <div class="rotate"><h4 class="sale-tag">SALE</h4></div>
+            <img class="image1" src="https://cdn.shopify.com/s/files/1/0125/7792/products/Tissot-Watch-Vintage-Chronograph-18ct-Gold-T9204177644100.jpg?v=1505311628">
+            <h4 class="h4">JAZZMASTER</h4>
+            <P class="price">$1050</P>
+        </div>
+
+        <div class="watch">
+            <div class="rotate"><h4 class="sale-tag">SALE</h4></div>
+            <img class="image1" src="https://cdn.shopify.com/s/files/1/0125/7792/products/Tissot-Watch-Vintage-Chronograph-18ct-Gold-T9204177644100.jpg?v=1505311628">
+            <h4 class="h4">JAZZMASTER</h4>
+            <P class="price">$1050</P>
+        </div>
+
+        <div class="watch">
+            <div><h4 class="sale-tag">SALE</h4></div>
+            <img class="image1" src="https://cdn.shopify.com/s/files/1/0125/7792/products/Tissot-Watch-Vintage-Chronograph-18ct-Gold-T9204177644100.jpg?v=1505311628">
+            <h4 class="h4">JAZZMASTER</h4>
+            <P class="price">$1050</P>
+        </div>
+    </section>
+    
+</body>
+</html>
